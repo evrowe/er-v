@@ -1,0 +1,24 @@
+---
+code: 404
+title: This Destination Does Not Exist
+permalink: 404.html
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ code }}: {{ title }}</title>
+    <link rel="stylesheet" href="./css/404.css" type="text/css">
+    <style>
+      body { font-family: sans-serif; }
+      .error-screen {
+
+      }
+    </style>
+  </head>
+  <body class="error-screen 404-page">
+    <h1>{{ code }}</h1>
+    <p>Beep boop, the server couldn't find the page you were looking for! <a href="{{ "/" | url }}">Try going back home</a> to start over.</p>
+  </body>
+</html>
